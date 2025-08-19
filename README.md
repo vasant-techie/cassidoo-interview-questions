@@ -1,6 +1,24 @@
 # cassidoo-interview-questions
 interview coding questions &amp; solutions to the cassidy weekly newsletter
 ***
+***2025, August 18***
+
+Write a generator function *createLaundryItem()* that returns an object representing a laundry item. 
+This object should have a method *nextCycle()* which, when called, advances the item through a series of laundry cycles in order: "soak", "wash", "rinse", "spin", and "dry". After the final cycle, subsequent calls to nextCycle() should return "done".
+
+**Example:**
+
+> let towel = createLaundryItem();
+
+> console.log(towel.nextCycle()); // "soak"
+> console.log(towel.nextCycle()); // "wash"
+> console.log(towel.nextCycle()); // "rinse"
+> console.log(towel.nextCycle()); // "spin"
+> console.log(towel.nextCycle()); // "dry"
+> console.log(towel.nextCycle()); // "done"
+> console.log(towel.nextCycle()); // "done"
+
+
 ***2024, August 12***
 
 Given an array of logs and variable assignments, return a list of all unused variables.
